@@ -7,9 +7,7 @@
 <script>
 export default {
   name: 'Header_Marketing',
-  props: {
-    msg: String
-  }
+
 }
 </script>
 
