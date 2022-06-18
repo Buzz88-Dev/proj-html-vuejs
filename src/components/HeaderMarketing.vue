@@ -50,9 +50,9 @@ export default {
 
   created(){
     this.dataHeader;
-    console.log(this.dataHeader);
-    console.log(this.dataHeader[0].texth1)
-    console.log(this.dataHeader[0].linksHeader)
+    // console.log(this.dataHeader);
+    // console.log(this.dataHeader[0].texth1)
+    // console.log(this.dataHeader[0].linksHeader)
   },
 
 
@@ -197,7 +197,8 @@ export default {
 
         img {
           width: 100%;
-          height: auto;        }
+          height: auto;
+        }
       }
     }
   }
