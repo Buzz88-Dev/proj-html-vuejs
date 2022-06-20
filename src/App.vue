@@ -13,11 +13,12 @@ import Footer_Marketing from './components/FooterMarketing.vue'
 
 export default {
   name: 'App',
+
   components: {
     Header_Marketing,
     Main_Marketing,
     Footer_Marketing,
-  }
+  },
 }
 </script>
 

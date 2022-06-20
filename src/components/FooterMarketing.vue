@@ -1,15 +1,23 @@
 <template>
   <div class="footer">
+    <hr>
     <div class="footer_text">
-        <div v-for="(item, index) in dataFooter.linkFooter" :key="index">
-            <div :class="classe">
-                <div v-for="(element, index) in item.menu" :key="index">
+        <div class="sofbox">
+            <div>
+                <img src="../assets/35.png" alt="">
+            </div>
+            <p class="mt-2">It is a long established fact that a reader will be disctracted by the readable content.</p>
+            <p class="mt-4">Copyright @2018 <span>SofBox</span></p>
+        </div>
+        <div v-for="(item, index) in dataFooter.linkFooter" :key="index" :class="classe">
+            <div class="first_div">
+                <div v-for="(element, index) in item.menu" :key="index" class="mb-3">
                     {{element}}
                 </div>
-                <div v-for="(element, index) in item.aboutUs" :key="index">
+                <div v-for="(element, index) in item.aboutUs" :key="index" class="mb-3">
                     {{element}}
                 </div>
-                <div v-for="(element, index) in item.quickLinks" :key="index">
+                <div v-for="(element, index) in item.quickLinks" :key="index" class="mb-3">
                     {{element}}
                 </div>
             </div>
@@ -69,10 +77,38 @@ export default {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .sofbox {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 25%;
+
+            p {
+                font-size: 14px;
+                color: grey;
+                line-height: 1.7;
+
+                span {
+                    color: #377dff;
+                }
+            }
+        }
 
         .column {
             display: flex;
             flex-direction: column;
+            width: 15%;
+            margin-left: 5%;
+            color: grey;
+
+            .first_div div:first-child {
+                color: black;
+                font-size: 20px;
+                margin: 0;
+            }
         }
     }
 

@@ -30,8 +30,7 @@ export default {
     MainMarketingTestimonials,
     MainMarketingLatestPosts,
     MainMarketingContact,
-  }
-
+  },
 }
 
     
@@ -44,6 +43,5 @@ export default {
     width: 90%;
     margin: auto;
   }
-
 
 </style>

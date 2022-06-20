@@ -1,14 +1,14 @@
 <template>
   <div class="header">
     <div class="navbar">
-
-      <img src="../assets/logo-2.png" alt="">
-
+      <div class="image">
+         <img :src="dataHeader[i].path">
+      </div>
       <div class="navbar_right">
         <div class="links">
           <ul v-for="(item, index) in dataHeader" :key="index">
             <li v-for="(element, index) in item.linksHeader" :key="index">
-              <a :class="(element.cursor === true) ? 'here_blue' : ''">
+              <a>
                 {{element.text}}
               </a>
             </li>
@@ -16,9 +16,9 @@
         </div>
 
         <div class="icons">
-          <font-awesome-icon icon="fas fa-search" />
-          <font-awesome-icon icon="fas fa-cart-arrow-down" />
-          <button>{{ dataHeader[i].buttonGetStarted }}</button>
+          <font-awesome-icon icon="fas fa-search" class="ms-5"/>
+          <font-awesome-icon icon="fas fa-cart-arrow-down" class="ms-4 me-5"/>
+          <button type="button">{{ dataHeader[i].buttonGetStarted }}</button>
         </div>
       </div>
     </div>
@@ -26,27 +26,21 @@
     <div class="jumbotron">
       <div class="text_left">
         <h1>{{dataHeader[i].texth1}}</h1>
-        <p>{{dataHeader[i].textp}}</p>
-        <button>{{ dataHeader[i].buttonRead }}</button>
+        <div>
+          <p>{{dataHeader[i].textp}}</p>
+        </div>
+        <button type="button">{{ dataHeader[i].buttonRead }}</button>
       </div>
 
       <div class="image-right">
-        <img src="../assets/508.jpeg" alt="">
       </div>
-    </div>
+    </div>:
   </div>
 </template>
 
 <script>
 export default {
   name: 'Header_Marketing',
-
-  props: {
-  },
-
-  methods: {
-
-  },
 
   created(){
     this.dataHeader;
@@ -63,6 +57,7 @@ export default {
 
       dataHeader : [
         {
+          path : require('../assets/logo-2.png'),
           texth1 : "The biggest platform for your growth.",
           textp : "There are many variations of passages of Lorem ipsum available, but the majority have suffered alteration in same form",
           buttonRead : "Read More",
@@ -72,31 +67,26 @@ export default {
             {
                 text : "Home",
                 url : "#",
-                cursor: true
             },
 
             {
                 text : "About us",
                 url : "#",
-                cursor: false
             },
 
             {
                 text : "Feature",
                 url : "#",
-                cursor: false
             },
 
             {
                 text : "Testimonials",
                 url : "#",
-                cursor: false
             },
 
             {
                 text : "ContactUS",
                 url : "#",
-                cursor: false
             },
           ],
         }
@@ -111,21 +101,22 @@ export default {
 
   .header {
     width: 100%;
-    background-color: red;
 
     .navbar {
       width: 90%;
-      height: 50px;
       margin: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      background-color: green;
 
-        img {
-          width: 10%;
-          height: 100%;
+        .image {
+          width: 3%;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
 
         .navbar_right {
@@ -133,29 +124,46 @@ export default {
             flex-direction: row;
             justify-content: flex-end;
             flex-wrap: wrap;
+            align-items: center;
+            
 
             .links {
               margin-right: 20px;
 
               ul {
               list-style-type: none;
+              margin: 0;
 
                 li {
                   display: inline-block;
+                  margin-left: 50px;
 
                   a {
                     text-decoration: none;
                     color: black;
+                    font-size: 15px;
+                    padding-bottom: 18px;
 
                     &:hover {
-                      color: blue;
-                    }
-
-                    &.here_blue {
-                      border-bottom: 2px solid blue;
+                      color: #377DFF;
+                      border-bottom: 4px solid #377DFF;
                     }
                   }
                 }
+              }
+            }
+
+
+            .icons {
+              font-size: 12px;
+
+
+              button {
+                background-color: #377DFF;
+                font-size: 12px;
+                border: none;
+                padding: 8px 10px;
+                color: white;
               }
             }
         }     
@@ -164,41 +172,42 @@ export default {
 
 
     .jumbotron {
-      height: 400px;
-      background-color: rgb(175, 220, 220);
+      background-color: #F2f7ff;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       flex-wrap: wrap;
 
       .text_left {
-        width: 50%;
-        padding: 30px 20px;
+        width: 45%;
+        padding: 40px;
 
         h1 {
-          font-size: 40px;
+          font-size: 50px;
           line-height: 1.5;
         }
 
         p {
           color: grey;
-          font-size: 12px;
+          font-size: 14px;
           margin: 40px 0px;
+          line-height: 2.0;
         }
 
+
         button {
-          background-color: blue;
+          background-color: #377DFF;
           color: white;
           padding: 10px;
+          font-size: 12px;
+          border: none;
         }
       }
 
       .image-right {
         width: 50%;
+        background-image: url("../assets/27-1.png");
+        background-repeat: no-repeat;
 
-        img {
-          width: 100%;
-          height: auto;
-        }
       }
     }
   }
