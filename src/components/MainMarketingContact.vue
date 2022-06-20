@@ -41,7 +41,7 @@
                         <textarea class="form-control" rows="10" placeholder="Your Message"></textarea>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="button">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -134,7 +134,11 @@ export default {
                 }
 
                 button {
-                    background-color: #377dff;
+                    background-color: #377DFF;
+                    font-size: 14px;
+                    border: none;
+                    padding: 10px 12px;
+                    color: white;
                 }
             }
         }

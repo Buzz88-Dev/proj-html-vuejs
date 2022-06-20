@@ -9,7 +9,7 @@
         </div>
 
         <div class="button">
-            <b-button variant="primary">Explore More Feature</b-button>
+            <button type="button">Explore More Feature</button>
         </div>
     </div>
 
@@ -135,6 +135,7 @@ export default {
                     font-size: 14px;
                     border: none;
                     padding: 10px 12px;
+                    color: white;
                 }
             }
         }
