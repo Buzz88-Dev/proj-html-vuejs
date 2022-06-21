@@ -9,7 +9,7 @@
         </div>
 
         <div class="button">
-            <button type="button">Explore More Feature</button>
+            <button class="rounded" type="button">Explore More Feature</button>
         </div>
     </div>
 
@@ -34,56 +34,56 @@ export default {
     return {
         dataBusiness : [
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Customized Invoices",
                 colorClass : "blue",
                 icon : "fas fa-chart-line",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Stock Management",
                 colorClass : "red",
                 icon : "fas fa-plane-departure",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Receivable & Payables",
                 colorClass : "green",
                 icon : "fas fa-user-tie",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Manage Buying",
                 colorClass : "blue",
                 icon : "fas fa-user-tie",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Powerful & Secure",
                 colorClass : "red",
                 icon : "fas fa-spinner",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Fastest Return Filing",
                 colorClass : "green",
                 icon : "fas fa-user-tie",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Monthly Detailed",
                 colorClass : "blue",
                 icon : "fas fa-book",
             },
 
             {
-                classIcone : "icone_single",
+                classIcone : "icone_single rounded",
                 texth5 : "Product Management",
                 colorClass : "red",
                 icon : "fas fa-thumbs-up",
@@ -118,8 +118,8 @@ export default {
                     width: 60%;
 
                     p {
-                        font-size: 15px;
-                        color: grey;
+                        font-size: 17px;
+                        color: #8E989F;
                         line-height: 1.7;
                     }
                 }
@@ -155,11 +155,12 @@ export default {
                 box-shadow: 5px 5px 20px #dedede;
 
                 h5 {
-                    font-size: 14px;
+                    font-size: 16px;
+                    margin-bottom: 30px;
                 }
 
                 span {
-                    font-size: 30px;
+                    font-size: 40px;
                 }
 
                 .blue {
@@ -172,6 +173,14 @@ export default {
 
                 .green {
                     color: green;
+                }
+
+                &:hover {
+                    background-color: #6CDAC1;
+
+                    h5, span {
+                        color: white;
+                    }
                 }
             }
         }

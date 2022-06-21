@@ -9,7 +9,7 @@
             <div class="image">
                 <img src="../assets/26.jpeg" alt="">
             </div>
-            <h5>Julia Aann <span> - COO Sofbox</span></h5>
+            <h6>Julia Aann <span> - COO Sofbox</span></h6>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
         </div>
 
@@ -17,7 +17,7 @@
             <div class="image">
                 <img src="../assets/27.jpeg" alt="">
             </div>
-            <h5>Mac Znder <span> - Manager Sofbox</span></h5>
+            <h6>Mac Znder <span> - Manager Sofbox</span></h6>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
         </div>
     </div>
@@ -50,14 +50,23 @@ export default {
         margin-top: 100px;
         text-align: center;
 
+        .image img {
+
+            filter: opacity(120%);
+        }
+
+        h5 {
+            font-size: 30px;
+        }
+
         .text {
             width: 40%;
             margin: auto;
 
             p {
-                font-size: 14px;
+                font-size: 16px;
                 margin-top: 20px;
-                color: grey;
+                color: #8E989F;
                 line-height: 1.7;
             }   
         }
@@ -65,7 +74,7 @@ export default {
         .testimonials_icone {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
+            margin-top: 50px;
 
             .testimonial_left {
                 width: 45%;
@@ -83,18 +92,19 @@ export default {
                     }
                 }
 
-                h5 {
+                h6 {
                     margin: 30px 0px;
+                    font-size: 20px;
 
                     span {
                         font-size: 14px;
-                        color: grey
+                        color: #8E989F;
                     }
                 }
 
                 p {
-                    font-size: 14px;
-                    color: grey;
+                    font-size: 15px;
+                    color: #8E989F;
                     line-height: 1.8;
                     text-align: left;
                 }
@@ -117,18 +127,19 @@ export default {
                     }
                 }
 
-                h5 {
+                h6 {
                     margin: 30px 0px;
+                    font-size: 20px;
 
                     span {
                         font-size: 14px;
-                        color: grey
+                        color: #8E989F;
                     }
                 }
 
                 p {
-                    font-size: 14px;
-                    color: grey;
+                    font-size: 15px;
+                    color: #8E989F;
                     line-height: 1.8;
                     text-align: left;
                 }
@@ -139,11 +150,12 @@ export default {
             margin-top: 30px;
             display: flex;
             justify-content: center;
+            font-size: 12px;
 
             .single_circle {
 
                 &:hover {
-                color: blue;
+                color: #377DFF;
                 }
             }
         }

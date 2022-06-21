@@ -78,7 +78,8 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 50px;
+        margin-top: 70px;
+        margin-bottom: 30px;
 
         .sofbox {
             display: flex;
@@ -88,7 +89,7 @@ export default {
 
             p {
                 font-size: 14px;
-                color: grey;
+                color: #8E989F;
                 line-height: 1.7;
 
                 span {
@@ -102,7 +103,7 @@ export default {
             flex-direction: column;
             width: 15%;
             margin-left: 5%;
-            color: grey;
+            color: #8E989F;
 
             .first_div div:first-child {
                 color: black;
@@ -110,6 +111,10 @@ export default {
                 margin: 0;
             }
         }
+    }
+
+    hr {
+        background-color: #8E989F;
     }
 
 </style>

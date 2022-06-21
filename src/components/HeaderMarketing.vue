@@ -18,7 +18,7 @@
         <div class="icons">
           <font-awesome-icon icon="fas fa-search" class="ms-5"/>
           <font-awesome-icon icon="fas fa-cart-arrow-down" class="ms-4 me-5"/>
-          <button type="button">{{ dataHeader[i].buttonGetStarted }}</button>
+          <button class="rounded button_started" type="button">{{ dataHeader[i].buttonGetStarted }}</button>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
         <div>
           <p>{{dataHeader[i].textp}}</p>
         </div>
-        <button type="button">{{ dataHeader[i].buttonRead }}</button>
+        <button class="rounded" type="button" @click.prevent="changeColor()" :class="(black === true) ? 'button_black' : 'button_blue'">{{ dataHeader[i].buttonRead }}</button>
       </div>
 
       <div class="image-right">
@@ -47,11 +47,15 @@ export default {
     // console.log(this.dataHeader);
     // console.log(this.dataHeader[0].texth1)
     // console.log(this.dataHeader[0].linksHeader)
+    console.log(this.black);
   },
 
 
   data(){
     return {
+
+      black : false,
+      count : 1,
 
       i : 0,
 
@@ -91,6 +95,22 @@ export default {
           ],
         }
       ]     
+    }
+  },
+
+  methods : {
+
+    changeColor(){
+      let number = this.count++;
+      console.log(number);
+      if (number % 2 !== 0){
+        this.black = true;
+        console.log(this.black);
+      } else {
+        this.black = false;
+        console.log(this.black);
+      }
+      return this.black;
     }
   }
 }
@@ -141,12 +161,13 @@ export default {
                   a {
                     text-decoration: none;
                     color: black;
-                    font-size: 15px;
+                    font-size: 17px;
                     padding-bottom: 18px;
+                    cursor: pointer;
 
                     &:hover {
                       color: #377DFF;
-                      border-bottom: 4px solid #377DFF;
+                      border-bottom: 3px solid #377DFF;
                     }
                   }
                 }
@@ -155,15 +176,15 @@ export default {
 
 
             .icons {
-              font-size: 12px;
+              font-size: 14px;
 
 
-              button {
+              .button_started {
                 background-color: #377DFF;
-                font-size: 12px;
-                border: none;
-                padding: 8px 10px;
                 color: white;
+                padding: 10px;
+                font-size: 14px;
+                border: none;
               }
             }
         }     
@@ -179,26 +200,33 @@ export default {
 
       .text_left {
         width: 45%;
-        padding: 40px;
+        padding: 50px 40px;
 
         h1 {
-          font-size: 50px;
+          font-size: 55px;
           line-height: 1.5;
         }
 
         p {
-          color: grey;
-          font-size: 14px;
+          color: #8E989F;
+          font-size: 16px;
           margin: 40px 0px;
           line-height: 2.0;
         }
 
-
-        button {
+        .button_blue {
           background-color: #377DFF;
           color: white;
           padding: 10px;
-          font-size: 12px;
+          font-size: 14px;
+          border: none;
+        }
+
+        .button_black {
+          background-color: black;
+          color: white;
+          padding: 10px;
+          font-size: 14px;
           border: none;
         }
       }

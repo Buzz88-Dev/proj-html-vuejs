@@ -57,13 +57,13 @@ export default {
 
             h2 {
                 width: 80%;
-                line-height: 1.6;
+                line-height: 1.5;
                 margin-bottom: 20px;
             }
 
             p {
-                font-size: 15px;
-                color: grey;
+                font-size: 17px;
+                color: #8E989F;
                 line-height: 1.7;
             }
 
@@ -100,8 +100,8 @@ export default {
                     }
 
                     p {
-                        font-size: 14px;
-                        color: grey;
+                        font-size: 15px;
+                        color: #8E989F;
                     }
                 }
             }
@@ -111,6 +111,7 @@ export default {
                 align-items: center;
                 margin-top: 30px;
                 padding: 20px 5px;
+                box-shadow: 5px 15px 20px #dedede;
 
                 .audit_image {
                     width: 20%;
@@ -138,8 +139,8 @@ export default {
                     }
 
                     p {
-                        font-size: 14px;
-                        color: grey;
+                        font-size: 15px;
+                        color: #8E989F;
                     }
                 }
             }

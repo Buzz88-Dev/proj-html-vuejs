@@ -19,10 +19,10 @@
                     <span>mail@sofbox.com</span>
                 </div>
                 <div class="social">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-github-square"></i>
-                    <i class="fab fa-instagram-square"></i>
+                    <img src="../assets/facebook.jpg" class="rounded">
+                    <img src="../assets/twitter.jpg" class="rounded">
+                    <img src="../assets/youtube.png" class="rounded">
+                    <img src="../assets/instagram.jpg" class="rounded"> 
                 </div>
                 <h6>Get in Touch</h6>
                 <form>
@@ -40,8 +40,8 @@
                     <div class="mb-4">
                         <textarea class="form-control" rows="10" placeholder="Your Message"></textarea>
                     </div>
-                    <div class="col-12">
-                        <button type="button">Send Message</button>
+                    <div class="col-12 mt-4">
+                        <button class="rounded" type="button">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -66,12 +66,13 @@ export default {
 
         h5 {
             text-align: center;
+            font-size: 30px;
         }
 
         p {
-            font-size: 14px;
-            margin-top: 20px;
-            color: grey;
+            font-size: 15px;
+            margin-top: 15px;
+            color: #8E989F;
             line-height: 1.7;
             text-align: center;
         }
@@ -79,7 +80,7 @@ export default {
         .icones {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
+            margin-top: 80px;
 
             .maps_left {
                 width: 45%;
@@ -106,7 +107,7 @@ export default {
 
                 h4 {
                     margin: 30px 0px;
-                    font-size: 16px;
+                    font-size: 17px;
                     font-weight: bold;
                 }
 
@@ -117,8 +118,8 @@ export default {
 
                     span {
                         text-align: left; 
-                        font-size: 13px;
-                        color: grey;
+                        font-size: 15px;
+                        color: #8E989F;
                         line-height: 2.0;
                     }
                 }
@@ -126,16 +127,23 @@ export default {
                 .social {
                     display: flex;
                     justify-content: flex-start;
+
+                    img {
+                        width: 3%;
+                        height: auto;
+                        margin-right: 10px;
+                        margin-bottom: 30px;
+                    }
                 }
 
                 h6 {
-                    font-size: 25px;
+                    font-size: 28px;
                     margin-bottom: 30px;
                 }
 
                 button {
                     background-color: #377DFF;
-                    font-size: 14px;
+                    font-size: 16px;
                     border: none;
                     padding: 10px 12px;
                     color: white;

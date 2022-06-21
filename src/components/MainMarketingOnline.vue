@@ -127,9 +127,9 @@ export default {
                     width: 80%;
 
                     p {
-                        font-size: 13px;
-                        color: grey;
-                        line-height: 2.0;
+                        font-size: 15px;
+                        color: #8E989F;
+                        line-height: 1.7;
                     }
                 }
 
@@ -143,7 +143,7 @@ export default {
                     }
 
                     h6 {
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: bold;
                     }
                 }

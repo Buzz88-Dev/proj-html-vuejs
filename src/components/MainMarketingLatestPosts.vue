@@ -60,23 +60,27 @@ export default {
     margin-top: 100px;
     text-align: center;
 
+    h5 {
+      font-size: 30px;
+    }
+
     p {
-      font-size: 14px;
+      font-size: 16px;
       margin-top: 20px;
-      color: grey;
+      color: #8E989F;
       line-height: 1.7;
     }
 
     .icones {
       display: flex;
       justify-content: space-between;
-      margin-top: 40px;
+      margin-top: 60px;
 
         .single_icone {
           display: flex;
           flex-direction: column;
           width: calc(33% - 3%);
-          border: 1px solid rgb(228, 220, 220);
+          border: 1px solid rgb(244, 237, 237);
           padding: 10px 15px;
 
           .image img {
@@ -87,7 +91,7 @@ export default {
           h6 {
             font-size: 20px;
             text-align: left;
-            margin-top: 20px;
+            margin-top: 30px;
           }
 
           .text {
