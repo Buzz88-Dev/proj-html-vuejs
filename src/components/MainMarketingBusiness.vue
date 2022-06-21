@@ -177,6 +177,7 @@ export default {
 
                 &:hover {
                     background-color: #6CDAC1;
+                    box-shadow: 10px 10px 10px #d9d1d1;
 
                     h5, span {
                         color: white;

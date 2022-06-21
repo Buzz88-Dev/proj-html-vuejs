@@ -72,8 +72,16 @@ export default {
                 align-items: center;
                 margin-top: 50px;
                 padding: 20px 5px;
-                box-shadow: 5px 15px 20px #dedede;
                 border: none;
+
+                &:hover {
+                    box-shadow: 5px 15px 20px #dedede;
+
+                    h6:hover {
+                        color: #377DFF;
+                        cursor: pointer;
+                    }
+                }
 
                 .analysis_image {
                     width: 20%;
@@ -94,11 +102,6 @@ export default {
                         font-weight: bold;
                     }
 
-                    h6:hover {
-                        color: #377DFF;
-                        cursor: pointer;
-                    }
-
                     p {
                         font-size: 15px;
                         color: #8E989F;
@@ -111,7 +114,16 @@ export default {
                 align-items: center;
                 margin-top: 30px;
                 padding: 20px 5px;
-                box-shadow: 5px 15px 20px #dedede;
+
+
+                &:hover {
+                    box-shadow: 5px 15px 20px #dedede;
+
+                    h6:hover {
+                        color: #377DFF;
+                        cursor: pointer;
+                    }
+                }
 
                 .audit_image {
                     width: 20%;
@@ -129,12 +141,6 @@ export default {
                     margin-left: 10px;
 
                     h6 {
-                        font-weight: bold;
-                    }
-
-                    h6:hover {
-                        color: #377DFF;
-                        cursor: pointer;
                         font-weight: bold;
                     }
 

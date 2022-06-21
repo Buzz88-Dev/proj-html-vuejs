@@ -45,8 +45,6 @@ export default {
         classe : "column",
 
         dataFooter : {
-            textp : "It is a long established fact that a reader will be disctracted by the readable content.",
-            spanfooter : "Copyright @ 2018 Sofbox",
 
             linkFooter : [
                 {

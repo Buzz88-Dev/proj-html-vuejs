@@ -56,7 +56,6 @@ export default {
 
       black : false,
       count : 1,
-
       i : 0,
 
       dataHeader : [
@@ -89,7 +88,7 @@ export default {
             },
 
             {
-                text : "ContactUS",
+                text : "Contact US",
                 url : "#",
             },
           ],
@@ -190,8 +189,6 @@ export default {
         }     
     }
 
-
-
     .jumbotron {
       background-color: #F2f7ff;
       display: flex;
@@ -199,19 +196,19 @@ export default {
       flex-wrap: wrap;
 
       .text_left {
-        width: 45%;
+        width: 50%;
         padding: 50px 40px;
 
         h1 {
-          font-size: 55px;
+          font-size: 56px;
           line-height: 1.5;
         }
 
         p {
           color: #8E989F;
-          font-size: 16px;
+          font-size: 17px;
           margin: 40px 0px;
-          line-height: 2.0;
+          line-height: 1.8;
         }
 
         .button_blue {
@@ -221,7 +218,6 @@ export default {
           font-size: 14px;
           border: none;
         }
-
         .button_black {
           background-color: black;
           color: white;
@@ -230,12 +226,10 @@ export default {
           border: none;
         }
       }
-
       .image-right {
-        width: 50%;
+        width: 45%;
         background-image: url("../assets/27-1.png");
         background-repeat: no-repeat;
-
       }
     }
   }
